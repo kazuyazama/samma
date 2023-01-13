@@ -11,7 +11,7 @@ const Header = () => {
               <button>ham</button>
             </div>
             <div className="hidden lg:inline-flex">
-              <h1>本場韓国マッサージ</h1>
+              <h1>丁寧なホワイトニング</h1>
             </div>
           </div>
           <div className="  col-span-4">
@@ -31,7 +31,7 @@ const Header = () => {
         </div>
         <nav className="hidden lg:block">
           <ul className="flex justify-around  ">
-            <li>韓美について</li>
+            <li>sanmaについて</li>
             <li>店舗案内</li>
             <li>料金</li>
             <li>お問い合わせ</li>

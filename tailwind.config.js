@@ -22,12 +22,12 @@ module.exports = {
       // },
       {
         mytheme: {
-          //水色
-          primary: "#00A3F4",
-          //薄い水色
-          secondary: "#F4FCFF",
-          //オレンジ
-          accent: "#FFB100",
+          //紫
+          primary: "#dec0f1",
+          //薄紫
+          secondary: "#f6edfb",
+          //黄緑
+          accent: "#d3f1c0",
           //若干グレーっぽい黒
           neutral: "#374151",
           //しろ
