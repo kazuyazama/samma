@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Drawer from "../Organisms/Drawer";
 
 const Header = () => {
   return (
@@ -8,7 +9,8 @@ const Header = () => {
           <div className=" col-span-1">
             <div className="lg:hidden">
               {/* スマホのみハンバーガーメニュー表示　表示はドロワーにする */}
-              <button>ham</button>
+              <Drawer />
+          
             </div>
             <div className="hidden lg:inline-flex">
               <h1>丁寧なホワイトニング</h1>

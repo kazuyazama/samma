@@ -2,7 +2,7 @@ import Link from "next/link";
 import { ReactNode, useEffect, useState } from "react";
 import useScrollHidden from "../../hooks/useScrollHidden";
 import BottomNav from "../BottomNav";
-import Header from "../Header";
+import Header from "./Header";
 import Footer from "./Footer";
 
 type Props = {

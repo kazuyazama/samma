@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-spring/web": "^9.6.1",
     "@splidejs/react-splide": "^0.7.12",
     "@tailwindcss/typography": "^0.5.8",
     "@types/node": "18.11.18",
