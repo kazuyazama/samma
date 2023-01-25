@@ -16,7 +16,7 @@ const Layout = ({ children }: Props) => {
   return (
     <>
       <Header />
-      <main className="h-[100vh]">{children}</main>
+      <main>{children}</main>
       <Footer />
       {isVisible && 
       <BottomNav />

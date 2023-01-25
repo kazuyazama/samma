@@ -6,7 +6,7 @@ const BottomNav = () => {
   return (
     <div className="btm-nav grid grid-cols-4 ">
       <button className=" col-span-3">
-        <Link href="/">ホットペッパーへ</Link>
+        <Link href="/">ネット予約</Link>
       </button>
 
       {/* TOPにスクロールで戻るボタン */}
