@@ -12,18 +12,18 @@ const CompareOther = ({ compareOtherData }: Props) => {
         当店のセルフホワイトニングには他にもこんなメリットがあります。
       </h1>
 
-      <div className="grid grid-cols-2 gap-5  ">
+      <div className="grid lg:grid-cols-2 gap-5  ">
         {compareOtherData.map((other, index) => (
           <article
             key={other.title}
-            className="card  bg-primary text-primary-content"
+            className="card  bg-base-100 text-primary-content"
           >
             <div className="card-body">
               <div className="flex items-center gap-5">
-                <span className="text-5xl text-base-100 opacity-60">
+                <span className="text-5xl text-accent opacity-60">
                   {index + 1}
                 </span>
-                <h2 className={`card-title `}> {other.title}</h2>
+                <h2 className={`card-title text-primary `}> {other.title}</h2>
               </div>
               <p>{other.description}</p>
             </div>

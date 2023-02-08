@@ -41,8 +41,8 @@ module.exports = {
           primary: "#57c8ff",
           //薄水色
           secondary: "#e8f6ff",
-          //赤
-          accent: "#ffd900",
+          //オレンジ
+          accent: "#FFA500",
           //若干グレーっぽい黒
           neutral: "#374151",
           //しろ

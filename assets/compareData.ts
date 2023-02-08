@@ -1,4 +1,4 @@
-import { IconBong } from "@tabler/icons-react";
+import { IconBong, IconCloudStorm, IconCoinYen, IconDental,  IconToolsKitchen2 } from "@tabler/icons-react";
 
 export const compareOtherData = [
     {
@@ -33,25 +33,25 @@ export const compareData = [
       after: "独自開発の溶液",
     },
     {
-      icon: IconBong,
+      icon: IconCloudStorm,
       title: "痛み",
       before: "痛む場合が多い",
       after: "一切なし",
     },
     {
-      icon: IconBong,
+      icon: IconCoinYen,
       title: "1回あたりの料金",
       before: "高額",
       after: "低価格",
     },
     {
-      icon: IconBong,
+      icon: IconToolsKitchen2,
       title: "食事制限",
       before: "あり",
       after: "なし",
     },
     {
-      icon: IconBong,
+      icon: IconDental,
       title: "虫歯 / 人工歯の可否",
       before: "利用不可",
       after: "利用可能",

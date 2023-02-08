@@ -10,9 +10,9 @@ const Menu = () => {
           className="flex flex-col items-center  border  "
         >
           <dl className="w-full text-center">
-            <dt className="bg-primary py-3 ">{dl.count}</dt>
+            <dt className="bg-primary py-3 text-xl font-semibold text-base-100  tracking-widest">{dl.count}</dt>
 
-            <dd className="py-3 text-xl">{dl.price.toLocaleString()}円</dd>
+            <dd className="py-3 text-2xl text-primary font-bold tracking-wider">{dl.price.toLocaleString()}円</dd>
           </dl>
         </article>
       ))}
@@ -22,9 +22,9 @@ const Menu = () => {
       {countMenuData.map((dl) => (
         <article key={dl.price} className="flex flex-col items-center border  ">
           <dl className="w-full text-center">
-            <dt className="bg-primary py-3 ">{dl.count}回</dt>
+            <dt className="bg-primary py-3 text-xl font-semibold text-base-100 tracking-widest">{dl.count}回</dt>
 
-            <dd className="py-3 text-xl">{dl.price.toLocaleString()}円</dd>
+            <dd className="py-3 text-2xl text-primary font-bold tracking-wider">{dl.price.toLocaleString()}円</dd>
           </dl>
         </article>
       ))}

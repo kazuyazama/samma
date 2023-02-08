@@ -31,7 +31,7 @@ const Header = () => {
           </div>
         </div>
         <nav className="hidden lg:block ">
-          <ul className="flex justify-around ">
+          <ul className="flex justify-around text-lg  text-primary font-bold  tracking-widest ">
             <li>
               <Link href="/about">sanmaについて</Link>
             </li>
@@ -42,7 +42,7 @@ const Header = () => {
               <Link href="/price">料金</Link>
             </li>
             <li>
-              <Link href="/contact">お問い合わせ</Link>{" "}
+              <Link href="/contact">お問い合わせ</Link>
             </li>
           </ul>
         </nav>

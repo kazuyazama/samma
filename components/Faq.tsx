@@ -1,11 +1,11 @@
-import { IconLetterA, IconLetterQ, IconSquareLetterA, IconSquareRoundedLetterQ } from '@tabler/icons-react';
+import { IconSquareLetterA, IconSquareRoundedLetterQ } from '@tabler/icons-react';
 import Link from 'next/link';
 import { faqData } from '../assets/faqData';
 
 const Faq = () => {
     return (
         <article className="border-8 border-secondary p-3 ">
-        <h1 className="py-3 text-center text-2xl">よくある質問</h1>
+        <h1 className="py-6 text-center text-2xl">よくある質問</h1>
 
         {faqData.map((faq) => (
           <article

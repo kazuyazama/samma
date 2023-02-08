@@ -1,7 +1,11 @@
-import { GetServerSideProps } from "next";
+import { IconBulb } from "@tabler/icons-react";
 import Image from "next/image";
 import Breadcrumbs from "../components/Atoms/Breadcrumbs";
+import SectionTitle from "../components/Atoms/SectionTitle";
 import TopTitleText from "../components/Atoms/TopTitleText";
+import Compare from "../components/Compare";
+import Onayami from "../components/Onayami";
+import Osusume from "../components/Osusume";
 
 const introData = [
   { title: "しみない！\n痛くない！", path: "#siminai" },
@@ -15,7 +19,7 @@ const introData = [
 
 const mainData = [
   {
-    title: "しみない！痛くない！",
+    title: "しみない！\n痛くない！",
     subTitle: "効果と安全性の両面にこだわっています。",
     description:
       "ホワイトニング溶液の主成分は、食品や歯磨き粉にも使用されている安全性の高い無機化合物「酸化チタン」です。歯や歯茎にはダメージがないので、歯がしみたり、痛みは一切ありません。  老若男女問わず年間5万人以上のお客様にご利用いただいている、安心の実績です。",
@@ -29,7 +33,7 @@ const mainData = [
     id: "ansin",
   },
   {
-    title: "1回4980円 リーズナブル",
+    title: "1回4980円〜\nリーズナブル",
     subTitle: "安いだけじゃなく、しっかり結果が出る！",
     description:
       "sammaでは研修を受けた経験豊富なスタッフが、少ない施術回数で白さを実感できるよう毎回サポートを行うので、低価格なのに最大限の効果を得られます。また、歯の本数による料金アップはありません。笑顔で見える範囲すべてのホワイトニングで一律料金です。",
@@ -43,7 +47,7 @@ const mainData = [
     id: "natural",
   },
   {
-    title: "早い！最短30分！",
+    title: "早い！\n最短30分！",
     subTitle: "ちょっとした空き時間で、スピーディーに白さ実感！",
     description:
       "初回はカウンセリングを含めて1時間程お時間をいただきますが、2回目以降は30分！最短30分とスピーディーなので、待ち合わせ前、買い物途中、休憩時間、お仕事帰りなど手軽にケアが可能です。はじめは蓄積した汚れを落とす為に週1回ペースで4～5回繰り返し通っていただき、本来の歯の白さに戻します。早く白くしたいなどご希望のある方は連続して施術する事も可能ですので、ご相談下さい♪",
@@ -95,27 +99,44 @@ const About = () => {
           </h3>
         </article>
 
-        <article className=" col-span-full">
-          <ul className="grid grid-cols-2 gap-10">
+        <section className=" col-span-full flex flex-col gap-14 rounded-lg py-20 ">
+          <Onayami />
+          <Osusume />
+          <Compare />
+        </section>
+
+        {/* <article className=" col-span-full">
+          <ul className="grid lg:grid-cols-2 justify-center lg:justify-start  gap-10">
             {introData.map((intro, length) => (
-              <li className="flex w-full  ">
+              <li key={intro.title} className="flex w-full  ">
                 <a href={`${intro.path}`}>
-                  <article className="flex items-center gap-7">
+                  <article className="flex items-center gap-7  ">
+                    <Image
+                      src="/images/K_img08.png"
+                      alt=""
+                      width={150}
+                      height={150}
+                      className= " hidden lg:inline-flex "
+              
+                    />
                     <Image
                       src="/images/K_img08.png"
                       alt=""
                       width={100}
                       height={100}
+                      className="  lg:hidden "
+              
                     />
-                    <div className="flex flex-col items-start gap-2 ">
-                      <span className="rounded-3xl bg-primary py-1 px-5 text-xl">
+                    <div className="  flex flex-col items-start gap-2 ">
+                      <span className="rounded-3xl bg-primary py-1 px-5 text-xl text-base-100">
                         理由
-                        <span className=" pl-1 text-red-500">{length + 1}</span>
+                        <span className=" pl-1 text-accent">{length + 1}</span>
                       </span>
-                      <p className="text-xl">
+                      <p className="text-lg lg:text-xl ">
                         {intro.title.split("\n").map((text, index) => (
-                          <div key={index}>{text}</div>
+                          <span  className=" block lg:hidden"  key={index}>{text}</span>
                         ))}
+                        <span className=" hidden lg:inline ">{intro.title}</span>
                       </p>
                     </div>
                   </article>
@@ -123,31 +144,30 @@ const About = () => {
               </li>
             ))}
           </ul>
-        </article>
+        </article> */}
 
         {/* pb-80は最後のやつをスクロールしたら指定した位置よりかなり上に来ちゃうから調整用(後で消すかも) */}
 
-        <section className=" col-span-full pb-80 ">
+        {/* <section className=" col-span-full pb-80 ">
           <article>
             <ul className="grid gap-20 ">
               {mainData.map((main) => (
-                <li id={main.id} className="scroll-margin w-full">
-                  <h1 className=" text-2xl">{main.title}</h1>
-                  <div className="divider pb-5"></div>
-                  <article className="flex items-center gap-5">
+                <li key={main.id} id={main.id} className="scroll-margin w-full">
+                  <SectionTitle>{main.title}</SectionTitle>
+                  <article className="flex flex-col lg:flex-row  items-center gap-5">
                     <Image
                       src="/images/K_img08.png"
                       alt=""
-                      width={100}
-                      height={100}
-                      className="basis-1/3"
+                      width={150}
+                      height={150}
+                      className=" lg:basis-1/3  self-end lg:self-center order-2 "
                     />
                     <div className=" flex basis-full flex-col gap-3">
-                      <span className="flex w-40 justify-center gap-2 rounded-xl bg-accent py-2 ">
-                        <span className="">icon</span>
-                        <span className="">Point</span>
-                      </span>
-                      <h3 className="text-xl">{main.subTitle}</h3>
+                      <div className="    flex w-32 justify-center gap-2 rounded-xl bg-accent py-1 text-xl ">
+                        <IconBulb className="text-base-100" />
+                        <span className="  text-base-100">POINT</span>
+                      </div>
+                      <h3 className="text-xl text-accent font-semibold tracking-wider">{main.subTitle}</h3>
                       <p>{main.description}</p>
                     </div>
                   </article>
@@ -155,7 +175,7 @@ const About = () => {
               ))}
             </ul>
           </article>
-        </section>
+        </section> */}
       </div>
     </section>
   );

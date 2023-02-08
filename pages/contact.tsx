@@ -28,17 +28,20 @@ function Contact() {
 
         <article className=" col-span-full">
           <TopTitleText>お問い合わせ</TopTitleText>
+
+          <p className="py-10">
+            ホワイトニングカフェ総合問合せ窓口です。
+            <br />
+            下記フォームより必要事項を入力の上、送信ください。
+          </p>
           <form
-            className="grid items-center  justify-items-center gap-7 py-10 "
+            className="grid items-center  justify-items-center gap-7 bg-secondary px-3 lg:px-0  py-10 "
             onSubmit={handleSubmit(onSubmit)}
           >
-            <div className="form-control w-full max-w-xl items-center gap-3">
-              <label htmlFor="name" className=" self-start">
-                <span
-                  className=" tooltip-open tooltip tooltip-right tooltip-accent pr-2"
-                  data-tip="必須"
-                >
-                  お名前
+            <div className="form-control w-full max-w-2xl items-center gap-3">
+              <label htmlFor="name" className=" self-start ">
+                <span className="after:ml-3 after:inline-block after:rounded-lg after:bg-accent after:py-0.5 after:px-1 after:text-sm after:text-base-100 after:content-['必須']">
+                  名前
                 </span>
               </label>
               <input
@@ -53,12 +56,9 @@ function Contact() {
               )}
             </div>
 
-            <div className="form-control w-full max-w-xl items-center gap-3">
+            <div className="form-control w-full max-w-2xl items-center gap-3">
               <label htmlFor="email" className=" self-start">
-                <span
-                  className=" tooltip-open tooltip tooltip-right tooltip-accent pr-2"
-                  data-tip="必須"
-                >
+                <span className="after:ml-3 after:inline-block after:rounded-lg after:bg-accent after:py-0.5 after:px-1 after:text-sm after:text-base-100 after:content-['必須']">
                   メールアドレス
                 </span>
               </label>
@@ -77,12 +77,9 @@ function Contact() {
               )}
             </div>
 
-            <div className="form-control w-full max-w-xl items-center gap-3">
+            <div className="form-control w-full max-w-2xl items-center gap-3">
               <label htmlFor="tel" className=" self-start">
-                <span
-                  className=" tooltip-open tooltip tooltip-right tooltip-accent pr-2"
-                  data-tip="必須"
-                >
+                <span className="after:ml-3 after:inline-block after:rounded-lg after:bg-accent after:py-0.5 after:px-1 after:text-sm after:text-base-100 after:content-['必須']">
                   電話番号
                 </span>
               </label>
@@ -100,12 +97,9 @@ function Contact() {
               )}
             </div>
 
-            <div className="form-control w-full max-w-xl items-center gap-3">
+            <div className="form-control w-full max-w-2xl items-center gap-3">
               <label htmlFor="message" className=" self-start">
-                <span
-                  className=" tooltip-open tooltip tooltip-right tooltip-primary pr-2"
-                  data-tip="任意"
-                >
+                <span className="after:ml-3 after:inline-block after:rounded-lg after:bg-primary after:py-0.5 after:px-1 after:text-sm after:text-base-100 after:content-['任意']">
                   お問い合わせ内容
                 </span>
               </label>
@@ -117,7 +111,7 @@ function Contact() {
               ></textarea>
             </div>
 
-            <button type="submit" className="btn-primary btn w-60">
+            <button type="submit" className="btn-primary btn w-60 text-base-100 text-lg">
               送信する
             </button>
           </form>

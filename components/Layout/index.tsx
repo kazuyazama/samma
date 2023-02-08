@@ -1,5 +1,4 @@
-import Link from "next/link";
-import { ReactNode, useEffect, useState } from "react";
+import { ReactNode } from "react";
 import useScrollHidden from "../../hooks/useScrollHidden";
 import BottomNav from "../BottomNav";
 import Header from "./Header";
@@ -10,17 +9,16 @@ type Props = {
 };
 
 const Layout = ({ children }: Props) => {
-
-  const {isVisible} = useScrollHidden()
+  const { isVisible } = useScrollHidden();
 
   return (
     <>
       <Header />
-      <main className=" overflow-x-hidden prose-h1:font-bold prose-h1:tracking-wider">{children}</main>
+      <main className=" overflow-x-hidden prose-h1:font-bold prose-h1:tracking-wider prose-h1:text-primary prose-p:leading-relaxed">
+        {children}
+      </main>
       <Footer />
-      {isVisible && 
-      <BottomNav />
-      }
+      {isVisible && <BottomNav />}
     </>
   );
 };

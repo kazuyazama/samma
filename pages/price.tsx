@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { normalMenuData, countMenuData } from "../assets/price";
 import Breadcrumbs from "../components/Atoms/Breadcrumbs";
+import SectionTitle from "../components/Atoms/SectionTitle";
 import TopTitleText from "../components/Atoms/TopTitleText";
 import Menu from "../components/Menu";
 
@@ -16,7 +16,7 @@ const Price = () => {
 
         <article className=" col-span-full">
           <TopTitleText>メニュー・料金</TopTitleText>
-          <p className="pt-10 pb-2">
+          <p className="pt-10 pb-2 ">
             sammaのセルフホワイトニングでは、歯の本数による料金アップ等はありません。お口を開けて、見える範囲すべてのホワイトニングで一律料金です。
             <br />
             結果に個人差はありますが、多くの方が1日の施術で2～4トーン程度アップされています。また、週1回ペースで4回程度連続して施術していただくことで自分本来の歯の色に戻すことができています！
@@ -57,19 +57,18 @@ const Price = () => {
         </article>
 
         <section className=" col-span-full">
-          <h1 className=" text-2xl">ホワイトニング料金表</h1>
-          <div className="divider pb-5"></div>
+          <SectionTitle>ホワイトニング料金表</SectionTitle>
 
           <Menu />
-
-          <h3 className="pt-10 text-xl">おすすめの通い方</h3>
-          <div className="divider pb-5"></div>
+        </section>
+        <article className=" col-span-full">
+          <SectionTitle>おすすめの通い方</SectionTitle>
 
           <p>
             結果に個人差はありますが、多くの方が1回の施術(LED照射8分×2回)で2～4トーン程度アップされています。また、週1回ペースで4〜8回くらい連続して行うことで自分本来の歯の色に戻すことができます。その後は月1～2回程度のメンテナンスで明るく輝く歯を維持していくことができます。
             少しでも早く効果を得たいという方は、毎日通っていただいても大丈夫ですし、一度のご来店で2回の施術（8分×4回）を行うことも可能です。歯にダメージのあるものではないので、連続して行うことはまったく問題ありません。ご希望される方は2回分のご予約をネットまたはお電話でお取り下さい。
           </p>
-        </section>
+        </article>
       </div>
     </section>
   );
