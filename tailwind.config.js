@@ -42,7 +42,7 @@ module.exports = {
           //薄水色
           secondary: "#e8f6ff",
           //赤
-          accent: "#ff4000",
+          accent: "#ffd900",
           //若干グレーっぽい黒
           neutral: "#374151",
           //しろ

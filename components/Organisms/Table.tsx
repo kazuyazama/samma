@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import { access } from "../../libs/info/access";
-import { profile } from "../../libs/info/profile";
+import { access } from "../../assets/info/access";
+import { profile } from "../../assets/info/profile";
 import TopTitleText from "../Atoms/TopTitleText";
 
 // type Props = {
@@ -11,7 +11,7 @@ import TopTitleText from "../Atoms/TopTitleText";
 
 const Table = () => {
   return (
-    <table className="table-auto w-full border-separate border-spacing-11">
+    <table className="w-full table-auto border-separate border-spacing-11">
       <thead className=" ">
         <tr className="grid gap-7 ">
           <th className=" font-normal">
@@ -26,7 +26,7 @@ const Table = () => {
             <Image
               width={400}
               height={200}
-              className=" object-cover w-full"
+              className=" w-full object-cover"
               src="/images/suginuma-top.jpg"
               alt=""
             />
@@ -41,7 +41,7 @@ const Table = () => {
         {profile.map((li) => (
           <tr
             key={li.title}
-            className="flex gap-5 py-5 items-center border-t last:border-y  border-black "
+            className="flex items-center gap-5 border-t border-black py-5  last:border-y "
           >
             <td className="basis-1/3 ">{li.title}</td>
 
@@ -72,7 +72,7 @@ const Table = () => {
           </tr>
         ))}
         {access?.map((li) => (
-          <tr key={li.title} className="flex gap-5 py-5 items-center ">
+          <tr key={li.title} className="flex items-center gap-5 py-5 ">
             <td className="basis-full">
               <span>{li.title}</span>
 

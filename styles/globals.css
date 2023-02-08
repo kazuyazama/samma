@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+}
+
+.scroll-margin {
+  scroll-margin-top:50px;
+  margin-bottom:50px;
+}

@@ -16,7 +16,7 @@ const Layout = ({ children }: Props) => {
   return (
     <>
       <Header />
-      <main>{children}</main>
+      <main className=" overflow-x-hidden prose-h1:font-bold prose-h1:tracking-wider">{children}</main>
       <Footer />
       {isVisible && 
       <BottomNav />

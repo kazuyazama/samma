@@ -1,14 +1,15 @@
 import { ReactNode } from "react";
 
 type Props = {
-    children:ReactNode
-}
+  children: ReactNode;
+};
 
-
-const TopTitleText = ({children}:Props) => {
-    return (
-        <h1 className="text-3xl lg:text-5xl text-left relative before:w-0 lg:before:h-20 before:border-l before:border-4 before:border-primary before:mr-4">{children}</h1>
-    );
-}
+const TopTitleText = ({ children }: Props) => {
+  return (
+    <h1 className="relative text-left text-2xl before:mr-4 before:w-0 before:border-4 before:border-l before:border-primary lg:text-3xl lg:before:h-20">
+      {children}
+    </h1>
+  );
+};
 
 export default TopTitleText;

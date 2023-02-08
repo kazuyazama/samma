@@ -15,7 +15,7 @@ const Drawer = () => {
         <Hamburger visible={visible} />
         {/* <GiHamburgerMenu size={30} /> */}
       </button>
-      {visible && <DrawerItem visible={visible} />}
+      {visible && <DrawerItem visible={visible} setVisible={setVisible} />}
     </>
   );
 };
