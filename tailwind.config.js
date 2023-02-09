@@ -12,10 +12,10 @@ module.exports = {
       },
       keyframes: {
         "slide-right": {
-          "0%": {
+          from: {
             transform: "translateX(-100%)",
           },
-          to: {
+          to: { 
             transform: "translateX(0px)",
           },
         },

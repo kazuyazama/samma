@@ -1,9 +1,14 @@
-import { IconBadge, IconCurrencyYen, IconInfoCircle, IconMessageCircle, IconNorthStar } from "@tabler/icons-react";
+import {
+  IconBadge,
+  IconCurrencyYen,
+  IconInfoCircle,
+  IconMessageCircle,
+  IconNorthStar,
+} from "@tabler/icons-react";
 import { useRouter } from "next/router";
 import { Dispatch, SetStateAction } from "react";
 
 type Props = {
-  visible: boolean;
   setVisible: Dispatch<SetStateAction<boolean>>;
 };
 
@@ -35,15 +40,11 @@ const items = [
   },
 ];
 
-const DrawerItem = ({ visible, setVisible }: Props) => {
+const DrawerItem = ({ setVisible }: Props) => {
   const router = useRouter();
 
   return (
-    <div
-      className={`h-screen w-2/3 -translate-x-full animate-slide-right ${
-        visible ? "translate-x-0" : "-translate-x-full"
-      } fixed top-0 left-0 z-[9999] flex flex-col bg-secondary duration-700 `}
-    >
+    <div className="fixed top-0  left-0 z-[9999] flex h-screen w-2/3 animate-slide-right flex-col bg-secondary  ">
       <ul className=" mt-16 grid w-full items-center text-base-content">
         {items.map((item) => (
           <li
@@ -57,7 +58,7 @@ const DrawerItem = ({ visible, setVisible }: Props) => {
                 router.push(item.path), setVisible(false);
               }}
             >
-              {<item.icon className="text-accent mr-5 inline" />}
+              {<item.icon className="mr-5 inline text-accent" />}
               {item.title}
             </a>
           </li>

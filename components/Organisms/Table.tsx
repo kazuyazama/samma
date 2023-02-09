@@ -73,7 +73,7 @@ const Table = () => {
         {access?.map((li) => (
           <tr key={li.title} className="flex items-center gap-5 py-5 ">
             <td className="basis-full ">
-              <p className=" text-xl tracking-wider ">{li.title}</p>
+              <p className=" text-lg tracking-wider ">{li.title}</p>
 
               <Image
                 src={li.src}
