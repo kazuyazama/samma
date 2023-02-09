@@ -1,3 +1,4 @@
+import { NextSeo } from "next-seo";
 import { useForm, SubmitHandler } from "react-hook-form";
 import Breadcrumbs from "../components/Atoms/Breadcrumbs";
 import TopTitleText from "../components/Atoms/TopTitleText";
@@ -18,6 +19,14 @@ function Contact() {
   const onSubmit: SubmitHandler<Inputs> = (data) => console.log(data);
 
   return (
+    <>
+    <NextSeo
+    title="お問い合わせ" 
+    openGraph={{
+      url: "https://www.restarts.co.jp/service",
+      title: "お問い合わせ | ホワイトニングsamma(サンマ）",
+    }} 
+  />
     <section className="container mx-auto px-3 py-10 pt-5 ">
       <div className="container mx-auto grid grid-cols-4 gap-14 px-3 ">
         <div className=" col-span-full ">
@@ -26,7 +35,7 @@ function Contact() {
           </div>
         </div>
 
-        <article className=" col-span-full">
+        <article className=" col-span-full pb-20">
           <TopTitleText>お問い合わせ</TopTitleText>
 
           <p className="py-10">
@@ -35,7 +44,7 @@ function Contact() {
             下記フォームより必要事項を入力の上、送信ください。
           </p>
           <form
-            className="grid items-center  justify-items-center gap-7 bg-secondary px-3 lg:px-0  py-10 "
+            className="grid items-center  justify-items-center gap-7 bg-secondary px-3 lg:px-0  py-10  "
             onSubmit={handleSubmit(onSubmit)}
           >
             <div className="form-control w-full max-w-2xl items-center gap-3">
@@ -118,6 +127,7 @@ function Contact() {
         </article>
       </div>
     </section>
+    </>
   );
 }
 

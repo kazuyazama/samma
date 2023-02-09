@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Osusume = () => {
   return (
-    <article className="">
+    <article className=" relative">
       <h1 className="pt-10 text-center text-2xl ">
         そんな方にオススメなのが当店の セルフホワイトニング
       </h1>
@@ -15,7 +15,13 @@ const Osusume = () => {
         alt=""
         width={1200}
         height={200}
-        className="mx-auto rounded-3xl shadow-xl"
+        className="mx-auto rounded-3xl shadow-xl hidden lg:block"
+      />
+      <Image
+        src="/images/whitening_bg.jpg"
+        alt=""
+        fill
+        className="mx-auto object-cover  rounded-3xl shadow-xl lg:hidden"
       />
     </article>
   );

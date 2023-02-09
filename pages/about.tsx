@@ -1,7 +1,6 @@
-import { IconBulb } from "@tabler/icons-react";
+import { NextSeo } from "next-seo";
 import Image from "next/image";
 import Breadcrumbs from "../components/Atoms/Breadcrumbs";
-import SectionTitle from "../components/Atoms/SectionTitle";
 import TopTitleText from "../components/Atoms/TopTitleText";
 import Compare from "../components/Compare";
 import Onayami from "../components/Onayami";
@@ -72,40 +71,48 @@ const mainData = [
 
 const About = () => {
   return (
-    <section className="container mx-auto grid justify-items-center gap-3 px-3 py-10  pt-5">
-      <div className="container mx-auto grid grid-cols-4 gap-14 px-3 ">
-        <div className=" col-span-full ">
-          <div className="flex flex-col gap-5 ">
-            <Breadcrumbs>sammaについて</Breadcrumbs>
+    <>
+      <NextSeo
+        title="samma(サンマ）について"
+        openGraph={{
+          url: "https://www.restarts.co.jp/service",
+          title: "samma(サンマ）について | ホワイトニングsamma(サンマ）",
+        }}
+      />
+      <section className="container mx-auto grid justify-items-center gap-3 px-3 py-10  pt-5">
+        <div className="container mx-auto grid grid-cols-4 gap-14 px-3 ">
+          <div className=" col-span-full ">
+            <div className="flex flex-col gap-5 ">
+              <Breadcrumbs>sammaについて</Breadcrumbs>
+            </div>
           </div>
-        </div>
 
-        <article className="col-span-full">
-          <TopTitleText>sammaでセルフホワイトニング</TopTitleText>
-          <Image
-            src="/images/2-top3.jpg"
-            className="py-10"
-            alt=""
-            width={1000}
-            height={200}
-          />
-          <h1 className="pb-3 text-xl">
-            始めやすい価格 x 1回20分のスピード施術
-          </h1>
-          <h3 className=" text-lg">
-            ホワイトニングはセルフでできる時代に。
-            忙しい方にも空き時間に受けていただけ、これまでのホワイトニング
-            よりずっとお手頃で気軽に初められます。
-          </h3>
-        </article>
+          <article className="col-span-full">
+            <TopTitleText>sammaでセルフホワイトニング</TopTitleText>
+            <Image
+              src="/images/2-top3.jpg"
+              className="py-10"
+              alt=""
+              width={1000}
+              height={200}
+            />
+            <h1 className="pb-3 text-xl">
+              始めやすい価格 x 1回20分のスピード施術
+            </h1>
+            <h3 className=" text-lg">
+              ホワイトニングはセルフでできる時代に。
+              忙しい方にも空き時間に受けていただけ、これまでのホワイトニング
+              よりずっとお手頃で気軽に初められます。
+            </h3>
+          </article>
 
-        <section className=" col-span-full flex flex-col gap-14 rounded-lg py-20 ">
-          <Onayami />
-          <Osusume />
-          <Compare />
-        </section>
+          <section className=" col-span-full flex flex-col gap-14 rounded-lg py-20 ">
+            <Onayami />
+            <Osusume />
+            <Compare />
+          </section>
 
-        {/* <article className=" col-span-full">
+          {/* <article className=" col-span-full">
           <ul className="grid lg:grid-cols-2 justify-center lg:justify-start  gap-10">
             {introData.map((intro, length) => (
               <li key={intro.title} className="flex w-full  ">
@@ -146,9 +153,9 @@ const About = () => {
           </ul>
         </article> */}
 
-        {/* pb-80は最後のやつをスクロールしたら指定した位置よりかなり上に来ちゃうから調整用(後で消すかも) */}
+          {/* pb-80は最後のやつをスクロールしたら指定した位置よりかなり上に来ちゃうから調整用(後で消すかも) */}
 
-        {/* <section className=" col-span-full pb-80 ">
+          {/* <section className=" col-span-full pb-80 ">
           <article>
             <ul className="grid gap-20 ">
               {mainData.map((main) => (
@@ -176,8 +183,9 @@ const About = () => {
             </ul>
           </article>
         </section> */}
-      </div>
-    </section>
+        </div>
+      </section>
+    </>
   );
 };
 

@@ -34,7 +34,7 @@ const IndexInfo = () => {
         </table>
         <div>
           <iframe
-            className="h-80 w-full"
+            className="h-80 lg:h-96 w-full"
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11655.950788288332!2d141.500371!3d43.083754!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x23fa0870e8b251c5!2zVE9UT1NFUlVNICjjg4jjg4jjgrvjg6njg6Ap!5e0!3m2!1sja!2sjp!4v1675680975314!5m2!1sja!2sjp"
           />
         </div>
@@ -46,14 +46,14 @@ const IndexInfo = () => {
           {access?.map((li) => (
             <tr key={li.title} className="flex items-center gap-5 py-5 ">
               <td className="basis-full">
-                <span>{li.title}</span>
+                <p className="text-xl tracking-wider">{li.title}</p>
 
                 <Image
                   src={li.src}
-                  width={300}
+                  width={400}
                   height={300}
                   alt={li.alt}
-                  className="w-full"
+                  className=" object-cover"
                 />
               </td>
             </tr>

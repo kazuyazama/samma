@@ -17,7 +17,7 @@ const Header = () => {
           </div>
           <div className="  col-span-4">
             {/* ロゴ */}
-            <Link href="/" className="btn-ghost btn text-xl normal-case">daisyUI</Link>
+            <Link href="/" className="btn-ghost btn text-xl normal-case">logo</Link>
           </div>
           <div className=" col-span-1 ">
             <button className="btn-ghost btn-circle btn w-full ">

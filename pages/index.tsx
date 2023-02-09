@@ -1,6 +1,4 @@
-import Image from "next/image";
 import { Carousel } from "../components/Organisms/Carousel";
-import { access } from "../assets/info/access";
 import Onayami from "../components/Onayami";
 import Osusume from "../components/Osusume";
 import Compare from "../components/Compare";
@@ -8,7 +6,6 @@ import Step from "../components/Steps";
 import Faq from "../components/Faq";
 import News from "../components/Organisms/News";
 import Menu from "../components/Menu";
-import { IconArrowBadgeRight } from "@tabler/icons-react";
 import SectionTitle from "../components/Atoms/SectionTitle";
 import IndexInfo from "../components/IndexInfo";
 

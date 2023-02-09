@@ -1,37 +1,43 @@
 import { compareData, compareOtherData } from "../assets/compareData";
 import CompareOther from "./CompareOther";
 
-const  Compare = () => {
+const Compare = () => {
   return (
     <>
       <article className="">
         <h1 className=" py-10 text-center text-2xl">
           一般的なホワイトニングとの違い
         </h1>
-        <div className="  overflow-x-scroll  outline outline-1 outline-gray-300 rounded-2xl ">
-          <table className=" table w-full ">
-            <thead className=" text-center">
-              <tr className=" ">
-                <th className=""></th>
+        <div className="  overflow-x-scroll   ">
+          <table className=" w-full   min-w-[640px] table-auto border-separate border-spacing-0    ">
+            <thead className=" border  bg-slate-200 text-center ">
+              <tr className=" [&>*]:py-4 [&>*]:tracking-widest  ">
+                <th className=" border-slate-200 ">比較項目</th>
                 <th className="">一般的なホワイトニング</th>
-                <th className="lg:text-lg text-base-100 bg-primary">セルフホワイトニング</th>
+                <th className="bg-primary text-base-100   ">
+                  セルフホワイトニング
+                </th>
               </tr>
             </thead>
-            <tbody>
+            <tbody className=" divide-slate-200  ">
               {compareData.map((th, index) => (
-                <tr key={index}>
-                  <th className="flex items-center gap-2">
+                <tr key={index} className="  text-center [&>*]:py-3 ">
+                  <th className="flex items-center gap-3  border-b border-l pl-4 ">
                     {<th.icon color="orange" className=" inline" />}
                     <span>{th.title}</span>
                   </th>
-                  <td>{th.before}</td>
-                  <td className=" border-l border-primary">{th.after}</td>
+                  <td className="border-l  border-b  ">{th.before}</td>
+                  <td className="  border-x  border-b border-primary ">
+                    {th.after}
+                  </td>
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
-          <p className="text-sm pt-2 text-right lg:hidden">右にスクロールしてください</p>
+        <p className="pt-2 text-right text-sm lg:hidden">
+          右にスクロールしてください
+        </p>
       </article>
       <CompareOther compareOtherData={compareOtherData} />
     </>
