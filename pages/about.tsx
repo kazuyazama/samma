@@ -90,11 +90,13 @@ const About = () => {
           <article className="col-span-full">
             <TopTitleText>sammaでセルフホワイトニング</TopTitleText>
             <Image
-              src="/images/2-top3.jpg"
-              className="py-10"
+              src="/images/IMG_7990.JPG"
+              className="py-10 object-cover"
               alt=""
               width={1000}
               height={200}
+              sizes="100%"
+
             />
             <h1 className="pb-3 text-xl">
               始めやすい価格 x 1回20分のスピード施術

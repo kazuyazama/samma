@@ -6,6 +6,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'hero-pattern-sp': "url('/images/IMG_8007.jpg')",
+        'hero-pattern': "url('/images/IMG_8007.jpg')",
+      },
       animation: {
         "slide-right":
           "slide-right 0.3s cubic-bezier(0.550, 0.055, 0.675, 0.190)   forwards",
@@ -15,14 +19,18 @@ module.exports = {
           from: {
             transform: "translateX(-100%)",
           },
-          to: { 
-            transform: "translateX(0px)",
+          to: {
+            transform: "translateX(0)",
           },
         },
       },
     },
   },
-  plugins: [require("@tailwindcss/typography"), require("daisyui")],
+  plugins: [
+    require("@tailwindcss/typography"),
+    require("daisyui"),
+    require("@tailwindcss/aspect-ratio"),
+  ],
   daisyui: {
     themes: [
       // {

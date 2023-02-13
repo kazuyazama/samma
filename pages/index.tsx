@@ -42,7 +42,7 @@ export default function Home() {
         <section className=" col-span-full">
           <Faq />
         </section>
-        <section className=" col-span-full">
+        <section className=" col-span-full pb-20">
        <IndexInfo />
         </section>
       </div>

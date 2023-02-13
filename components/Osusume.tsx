@@ -10,19 +10,15 @@ const Osusume = () => {
         セルフホワイトニングは歯を白くする だけでなくお口周りのトラブルに様々な
         効果が得られます。
       </p>
-      <Image
+      {/* <Image
         src="/images/whitening_bg.jpg"
         alt=""
         width={1200}
         height={200}
-        className="mx-auto rounded-3xl shadow-xl hidden lg:block"
-      />
-      <Image
-        src="/images/whitening_bg.jpg"
-        alt=""
-        fill
-        className="mx-auto object-cover  rounded-3xl shadow-xl lg:hidden"
-      />
+        className="mx-auto hidden rounded-3xl shadow-xl lg:block"
+      /> */}
+        <div className=" bg-hero-pattern-sp lg:hidden w-full h-[30vh] bg-cover bg-no-repeat rounded-3xl "></div>
+        <div className=" hidden lg:block bg-hero-pattern w-full h-[73vh] bg-cover bg-no-repeat bg-center rounded-3xl"></div>
     </article>
   );
 };

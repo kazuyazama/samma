@@ -44,7 +44,7 @@ const DrawerItem = ({ setVisible }: Props) => {
   const router = useRouter();
 
   return (
-    <div className="fixed top-0  left-0 z-[9999] flex h-screen w-2/3 animate-slide-right flex-col bg-secondary  ">
+    <div className="fixed top-0  left-0 z-[9999] flex h-screen w-2/3  -translate-x-full animate-slide-right flex-col bg-secondary  ">
       <ul className=" mt-16 grid w-full items-center text-base-content">
         {items.map((item) => (
           <li

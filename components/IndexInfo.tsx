@@ -53,7 +53,8 @@ const IndexInfo = () => {
                   width={400}
                   height={300}
                   alt={li.alt}
-                  className=" object-cover"
+                  sizes="100%"
+                  className=" object-cover w-full"
                 />
               </td>
             </tr>
