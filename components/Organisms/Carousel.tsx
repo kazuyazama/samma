@@ -18,12 +18,12 @@ export const Carousel = () => {
     resetProgress: false,
     //durationに相当
     speed: 2000,
-    height: "50vh",
+    height: "60vh",
     //PCfirst
     breakpoints: {
       1024: {
         padding: 0,
-        speed:4000
+        speed: 4000,
       },
     },
   };
@@ -39,12 +39,12 @@ export const Carousel = () => {
           <SplideTrack>
             {carouselImages.map((slide) => (
               <SplideSlide key={slide.alt}>
-                <Image
-                  className="hidden lg:block"
-                  layout="fill"
-                  src={slide.srcPC && slide.srcPC}
-                  alt={slide.alt}
-                />
+                  <Image
+                    className="hidden lg:block"
+                    fill
+                    src={slide.srcPC && slide.srcPC}
+                    alt={slide.alt}
+                  />
                 <Image
                   className="block lg:hidden"
                   layout="fill"

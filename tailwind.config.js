@@ -7,8 +7,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'hero-pattern-sp': "url('/images/IMG_8007.jpg')",
-        'hero-pattern': "url('/images/IMG_8007.jpg')",
+        'osusume': "url('/images/IMG_8007.JPG')",
       },
       animation: {
         "slide-right":
