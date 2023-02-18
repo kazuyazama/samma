@@ -14,7 +14,7 @@ const Layout = ({ children }: Props) => {
   return (
     <>
       <Header />
-      <main className=" overflow-x-hidden prose-h1:font-bold prose-h1:tracking-wider prose-h1:text-primary prose-p:leading-relaxed">
+      <main className=" overflow-x-hidden prose-h1:font-bold prose-h1:tracking-wider prose-h1:text-primary prose-p:tracking-widest ">
         {children}
       </main>
       <Footer />

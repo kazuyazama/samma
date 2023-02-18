@@ -30,7 +30,18 @@ const Price = () => {
             <br />
             結果に個人差はありますが、多くの方が1日の施術で2～4トーン程度アップされています。また、週1回ペースで4回程度連続して施術していただくことで自分本来の歯の色に戻すことができています！
           </p>
-          <div className="grid  grid-cols-2">
+
+          <Image
+              src="/images/sannmaIMage1.jpg"
+              alt=""
+              width={1000}
+              height={200}
+              className="object-cover rounded-md"
+              sizes="100%"
+            />
+
+         
+          {/* <div className="grid  grid-cols-2">
             <Image
               src="/images/IMG_7990.JPG"
               alt=""
@@ -59,7 +70,7 @@ const Price = () => {
               height={300}
               className="w-full object-cover"
             />
-          </div>
+          </div> */}
           <p className="pt-2">
             お得な回数券もご用意していますので、実際に体験し、スタッフの説明を受けて、ご自身にあったコースをお選びいただければと思います。無理な勧誘等は一切ありませんので気軽にお越しください。お得なキャンペーンも実施中です。
           </p>

@@ -13,7 +13,7 @@ const Onayami = () => {
             <span className=" -translate-x-5 ">
               <IconCheck color="orange" className="" />
             </span>
-            <span className="">{li}</span>
+            <span className=" tracking-wider">{li}</span>
           </li>
         ))}
       </ul>

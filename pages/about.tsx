@@ -89,26 +89,27 @@ const About = () => {
 
           <article className="col-span-full">
             <TopTitleText>sammaでセルフホワイトニング</TopTitleText>
+            <div className="pt-10 pb-2 grid gap-1">
+              <h1 className="text-xl">
+                始めやすい価格 x 1回20分のスピード施術
+              </h1>
+              <p className="">
+                ホワイトニングはセルフでできる時代に。
+                忙しい方にも空き時間に受けていただけ、これまでのホワイトニング
+                よりずっとお手頃で気軽に初められます。
+              </p>
+            </div>
             <Image
               src="/images/IMG_7990.JPG"
-              className="py-10 object-cover"
+              className="object-cover rounded-md"
               alt=""
               width={1000}
               height={200}
               sizes="100%"
-
             />
-            <h1 className="pb-3 text-xl">
-              始めやすい価格 x 1回20分のスピード施術
-            </h1>
-            <h3 className=" text-lg">
-              ホワイトニングはセルフでできる時代に。
-              忙しい方にも空き時間に受けていただけ、これまでのホワイトニング
-              よりずっとお手頃で気軽に初められます。
-            </h3>
           </article>
 
-          <section className=" col-span-full flex flex-col gap-14 rounded-lg py-20 ">
+          <section className=" col-span-full flex flex-col gap-3 rounded-lg  ">
             <Onayami />
             <Osusume />
             <Compare />

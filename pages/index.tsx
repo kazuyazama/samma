@@ -24,7 +24,7 @@ export default function Home() {
         article > children
          title:text-2xl,[&:not(:fist-child)]:py-10 
         */}
-        <section className=" col-span-full flex flex-col gap-14 rounded-lg bg-secondary px-7 py-20 ">
+        <section className=" col-span-full flex flex-col gap-14 rounded-md bg-secondary px-7 py-20 ">
           <Onayami />
           <Osusume />
           <Compare />

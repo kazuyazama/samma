@@ -11,12 +11,12 @@ const IndexInfo = () => {
           <tbody>
             <tr>
               <th>住所</th>
-              <td>北海道江別市大麻晴美町5-18</td>
+              <td>神奈川県川崎市川崎区小川町13-3 銀蔵ビル2階</td>
             </tr>
 
             <tr>
               <th>電話番号</th>
-              <td>090-5071-3120</td>
+              <td>044-387-2747</td>
             </tr>
 
             <tr>
@@ -25,7 +25,7 @@ const IndexInfo = () => {
             </tr>
             <tr>
               <th>定休日</th>
-              <td>土日祝</td>
+              <td>不定休</td>
             </tr>
             <tr>
               <th>アクセス</th>
@@ -54,7 +54,7 @@ const IndexInfo = () => {
                   height={300}
                   alt={li.alt}
                   sizes="100%"
-                  className=" object-cover w-full"
+                  className=" object-cover w-full rounded-md"
                 />
               </td>
             </tr>

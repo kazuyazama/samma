@@ -3,7 +3,7 @@ import Drawer from "../Organisms/Drawer";
 
 const Header = () => {
   return (
-    <div className=" overflow-hidden">
+    <div className=" overflow-hidden tracking-wider">
       <header className="container mx-auto gap-3 p-3 lg:grid lg:p-5 ">
         <div className="  grid grid-cols-6 items-center justify-items-center ">
           <div className=" col-span-1">
@@ -17,14 +17,14 @@ const Header = () => {
           </div>
           <div className="  col-span-4">
             {/* ロゴ */}
-            <Link href="/" className="btn-ghost btn text-xl normal-case">logo</Link>
+            <Link href="/" className="btn-ghost btn lg:text-xl normal-case">セルフホワイトニングSAMMA</Link>
           </div>
           <div className=" col-span-1 ">
             <button className="btn-ghost btn-circle btn w-full ">
-              <Link href="tel:044-387-1803" className="hidden lg:block">
-                <h1>044-387-1803</h1>
+              <Link href="tel:044-387-2747" className="hidden lg:block">
+                <h1>044-387-2747</h1>
               </Link>
-              <Link href="tel:044-387-1803" className="block lg:hidden">
+              <Link href="tel:044-387-2747" className="block lg:hidden">
                 <div>Tel</div>
               </Link>
             </button>

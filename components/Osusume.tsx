@@ -18,7 +18,7 @@ const Osusume = () => {
         className="mx-auto hidden rounded-3xl shadow-xl lg:block"
       /> */}
         <div className=" bg-osusume lg:hidden w-full h-[30vh] bg-cover bg-no-repeat rounded-3xl "></div>
-        <div className=" hidden lg:block bg-osusume w-full h-[73vh] bg-cover bg-no-repeat bg-center rounded-3xl"></div>
+        <div className=" hidden lg:block bg-osusume w-full h-[73vh] bg-cover bg-no-repeat bg-center rounded-md"></div>
     </article>
   );
 };

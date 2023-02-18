@@ -38,7 +38,7 @@ function Contact() {
         <article className=" col-span-full pb-20">
           <TopTitleText>お問い合わせ</TopTitleText>
 
-          <p className="py-10">
+          <p className="pt-10 pb-2">
             ホワイトニングカフェ総合問合せ窓口です。
             <br />
             下記フォームより必要事項を入力の上、送信ください。

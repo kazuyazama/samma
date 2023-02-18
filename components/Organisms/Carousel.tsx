@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Image from "next/image";
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
-import { carouselImages } from "../../utlis/carouselImages";
+import { carouselImages } from "../../assets/carouselImages";
 
 import "@splidejs/react-splide/css";
 
@@ -24,6 +24,7 @@ export const Carousel = () => {
       1024: {
         padding: 0,
         speed: 4000,
+        height: "50vh",
       },
     },
   };

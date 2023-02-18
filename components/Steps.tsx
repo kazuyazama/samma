@@ -2,7 +2,7 @@ import { stepData } from "../assets/step";
 
 const Step = () => {
   return (
-    <article className="bg-secondary p-3 rounded-lg">
+    <article className="bg-secondary p-3 rounded-md">
       <ul className={` grid justify-items-center lg:grid-cols-4 `}>
         {stepData.map((li, length) => (
           <li key={li.title} className="relative ">

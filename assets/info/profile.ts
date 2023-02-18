@@ -1,20 +1,20 @@
 export const profile = [
     {
       title: "店舗名",
-      discription: ["ホワイトニングsamma"],
+      discription: ["セルフホワイトニングSAMMA"],
     },
     {
       title: "住所",
       discription: [
-        "〒216-0004",
-        "神奈川県川崎市宮前区鷺沼１丁目１１−１８ TMビル３階",
+        "〒210-0025",
+        "神奈川県川崎市川崎区小川町13-3 銀蔵ビル2階",
         "Google Mapで見る"
       ],
     },
     
     {
       title: "電話番号",
-      discription: ["044-820-6100"],
+      discription: ["044-387-2747"],
     },
     {
       title: "営業時間",
@@ -34,16 +34,16 @@ export const profile = [
     },
     {
       title: "席数",
-      discription: ["3席"],
+      discription: ["2席"],
     },
-    {
-      title: "駐車場",
-      discription: [
-        "なし",
-        "※店舗目の前の道路にパーキングメーターあり",
-        "※鷺沼駅前にコインパーキング有り",
-      ],
-    },
+    // {
+    //   title: "駐車場",
+    //   discription: [
+    //     "なし",
+    //     "※店舗目の前の道路にパーキングメーターあり",
+    //     "※鷺沼駅前にコインパーキング有り",
+    //   ],
+    // },
  
     {
         title:"アクセス",
