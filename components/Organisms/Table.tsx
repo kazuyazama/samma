@@ -18,16 +18,24 @@ const Table = () => {
           </th> */}
           <th className="text-left leading-relaxed tracking-widest pt-10 -mb-5 font-normal  ">
             安い・早い・痛くない歯のホワイトニングサロン
-            神奈川県川崎市の鷺沼駅から徒歩3分!
+            神奈川県川崎市の川崎駅から徒歩○分!
             １回３０分で白さが実感でき、食事制限がない歯のホワイトニング専門店です。
           </th>
           <th>
             <Image
               width={1000}
               height={200}
-              className="  object-cover rounded-md"
+              className="  object-cover rounded-md hidden lg:block"
               src="/images/suginuma-top.jpg"
               sizes="100%"
+              alt="infoImage"
+            />
+            <Image
+              width={500}
+              height={500}
+              className="object-cover rounded-md lg:hidden"
+              src="/images/suginuma-top.jpg"
+              sizes="100% (max-width:768px) 50vh"
               alt="infoImage"
             />
           </th>

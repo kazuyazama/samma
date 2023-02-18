@@ -88,7 +88,7 @@ const About = () => {
           </div>
 
           <article className="col-span-full">
-            <TopTitleText>sammaでセルフホワイトニング</TopTitleText>
+            <TopTitleText>sammaについて</TopTitleText>
             <div className="pt-10 pb-2 grid gap-1">
               <h1 className="text-xl">
                 始めやすい価格 x 1回20分のスピード施術
